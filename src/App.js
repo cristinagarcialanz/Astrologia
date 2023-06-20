@@ -1,23 +1,28 @@
-import logo from '../img/medical-touris';
+import NavBar from './componentes/NavBar';
+import Home from './componentes/Home';
+import Sesiones from './componentes/Sesiones';
+import Footer from './componentes/Footer';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <NavBar />
+
+      <Routes>
+        
+        <Route path='/' element={<Home />} />
+        <Route path='/Sesiones' element={<Sesiones />} />
+
+        <Route path="*" element={<h2>¡Página no encontrada!</h2>} />
+      </Routes>
+
+
+      <Footer />
+
     </div>
   );
 }
