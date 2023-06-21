@@ -1,0 +1,48 @@
+.jumbotron_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 98%;
+  max-height: 770px;
+  height: auto;
+
+  opacity: 0.80;
+}
+
+.jumbotron h1 {
+  color: beige;
+  text-align: end;
+  font-size: 30px;
+  padding-right: 80px;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+  margin-top: 10px;
+  font-family: 'Dancing Script';
+}
+
+.jumbotron h1 span {
+  color: gray;
+}
+
+.jumbotron p {
+  color: beige;
+  padding: 30px;
+  margin-left: 20px;
+  text-align: right;
+  text-justify: unset;
+
+}
+
+.jumbotron a {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  margin-left: 10px;
+}

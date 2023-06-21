@@ -1,8 +1,13 @@
-import { Link as LinkRouter } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Alert } from 'bootstrap-4-react';
 
-function Footer(params) {
-    return(
-        <h1>Estamos en el Footer</h1>
+export default class Footer extends Component {
+  render() {
+    return (
+      <div>
+        <Alert primary>Footer</Alert>
+        <Alert secondary>Copy Right</Alert>
+      </div>
     )
+  }
 }
-export default Footer;
